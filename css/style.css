@@ -1,0 +1,274 @@
+/* 
+Project Name: WDB_Week 3
+Client: WDB
+Author: Claire Cohen
+*/
+
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+    color: #000;
+    background-color: #0b0e2f;
+    
+}
+
+body.about-page{
+    background-color: #fff;
+}
+
+body.contact-page{
+    background-color: #fff;   
+}
+body.words-page{
+    background-color: #fff;   
+}
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+/*HOMEPAGE STYLE*/
+#container {
+    width:100%;
+}
+
+h1{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    margin-top: 20%;
+    padding: 5px;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: .6875rem;
+    z-index: 1;
+}
+/*Header*/
+header {
+}
+
+nav{
+    padding: 5px;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: .6875875rem;
+}
+nav li{
+    display: block;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+/*Homepage Dropdown Menu*/
+li{
+    font-family: 'Courier New';
+    font-size: .6875rem;
+    font-weight: 700;
+    text-align: left;
+}
+li:hover{
+    background-color: #C3D7E4;
+}
+.content{
+      font-family: 'Courier New';
+      font-size: .6875rem;
+      padding: 8px 6px;
+      font-weight: 400;
+}
+.listelement{
+    cursor: pointer;
+}
+
+/*Homepage Links*/
+a{
+    color:#000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+footer {
+    font-size:.5rem;
+}
+
+/*ABOUT PAGE STYLES*/
+h1.about-page{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: .6875rem;
+}
+
+.about-text{
+    width:40%;
+    line-height: .9rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New';
+    font-weight: 400;
+    font-size: .6875rem; 
+    background-color: #fff;
+}
+.page-footer{
+    background-color: #fff;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    padding:0;
+}
+ul.about-page{
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #C3D7E4;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;   
+}
+
+li.about-page{
+    justify-content: space-between;
+    font-family: 'Courier New';
+    font-size: .6875rem;
+    font-weight: 700;
+}
+li:hover{
+    background-color: none;
+}
+
+/*WORDS PAGE STYLES*/
+h1.words-page{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: .6875rem;
+}
+.words-text{
+    width:40%;
+    line-height: .9rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New';
+    font-weight: 400;
+    font-size: .6875rem; 
+    background-color: #fff;
+}
+
+/*PROJECT SPECIFIC PAGE*/
+.project-specific{
+    width:40%;
+    line-height: .9rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New';
+    font-weight: 400;
+    font-size: .6875rem; 
+    background-color: #fff;
+}
+
+
+/*MOODBOARD*/
+
+.description {
+    display: none;
+    font-family: "Bodoni Italic", Garamond, "Times New Roman", serif;
+    font-size: 0.8em;
+    font-style: italic;
+    padding-top: 0.5em;
+    letter-spacing: 0.09em;
+}
+
+.mood-board {
+  width: 100%;
+  height: 100vh;
+  background-color:#d3d3d3;
+  position: relative;
+}
+.mood-board .title {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 40vh;
+}
+.mood-board .images {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.mood-board .element {
+  position: absolute;
+  z-index: 0;
+}
+.mood-board .element:hover .description {
+    display: block;
+    font-size: 1.125rem;
+}
+.mood-board .element img {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+     li {
+        font-size: 1.125rem;
+    }
+    .page-footer{
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        height: 45px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    h1 {
+        font-size: 1.125rem;
+    }
+     li {
+        font-size: 1rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+}
