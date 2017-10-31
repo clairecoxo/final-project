@@ -51,55 +51,8 @@ h1{
 header {
 }
 
-nav{
-    padding: 5px;
-    width:40%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    font-family: 'Courier New';
-    font-weight: 700;
-    font-size: .6875875rem;
-}
-nav li{
-    display: block;
-    background-color: #ffffff;
-    padding: 5px;
-}
-
-/*Homepage Dropdown Menu*/
-li{
-    font-family: 'Courier New';
-    font-size: .6875rem;
-    font-weight: 700;
-    text-align: left;
-}
-li:hover{
-    background-color: #C3D7E4;
-}
-.content{
-      font-family: 'Courier New';
-      font-size: .6875rem;
-      padding: 8px 6px;
-      font-weight: 400;
-}
-.listelement{
-    cursor: pointer;
-}
-
-/*Homepage Links*/
-a{
-    color:#000000;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: line-through;
-    cursor: pointer;
-}
-
-/*FOOTER*/
-footer {
-    font-size:.5rem;
+img{
+    width: 40%;
 }
 
 /*ABOUT PAGE STYLES*/
